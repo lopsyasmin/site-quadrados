@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Quadrados Coloridos</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .square {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 0.5px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Estilos de cores */
+        .red-border {
+            background-color: red;
+            border: none; /* Remove a borda preta dos quadrados vermelhos */
+        }
+
+        .blue {
+            background-color: blue;
+            border: none; /* Remove a borda dos quadrados azuis */
+        }
+
+        .green {
+            background-color: green;
+            border: none; /* Remove a borda dos quadrados verdes */
+        }
+
+        .yellow {
+            background-color: yellow;
+            border: none; /* Remove a borda dos quadrados amarelos */
+        }
+
+        /* Bordas pretas nos quadrados vermelhos da borda */
+        .top-left, .top-right, .bottom-left, .bottom-right {
+            border: 1px solid black;
+        }
+
+        /* Legenda */
+        .legenda {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="square red-border top-left"></div>
+            <div class="square red-border"></div>
+            <div class="square red-border"></div>
+            <div class="square red-border"></div>
+            <div class="square red-border"></div>
+            <div class="square red-border top-right"></div>
+        </div>
+        <div class="row">
+            <div class="square red-border"></div>
+            <div class="square blue"></div>
+            <div class="square blue"></div>
+            <div class="square blue"></div>
+            <div class="square blue"></div>
+            <div class="square red-border"></div>
+        </div>
+        <div class="row">
+            <div class="square red-border"></div>
+            <div class="square green"></div>
+            <div class="square green"></div>
+            <div class="square green"></div>
+            <div class="square green"></div>
+            <div class="square red-border"></div>
+        </div>
+        <div class="row">
+            <div class="square red-border"></div>
+            <div class="square yellow"></div>
+            <div class= "square yellow"></div>
+            <div class="square yellow"></div>
+            <div class="square yellow"></div>
+            <div class="square red-border"></div>
+        </div>
+        <div class="row">
+            <div class="square red-border bottom-left"></div>
+            <div class="square red-border"></div>
+            <div class="square red-border"></div>
+            <div class="square red-border"></div>
+            <div class="square red-border"></div>
+            <div class="square red-border bottom-right"></div>
+        </div>
+        <!-- Legenda -->
+        <div class="legenda">
+            Elaborado por Yasmin Aquino - Tarefa 8
+        </div>
+    </div>
+</body>
+</html>
